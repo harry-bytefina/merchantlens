@@ -1,5 +1,9 @@
 # 商证 MerchantLens · v1.1
 
+[在线体验](https://harry-bytefina.github.io/merchantlens/) · [源码](https://github.com/harry-bytefina/merchantlens)
+
+2026-10-04 已通过 GitHub Pages 发布静态演示。
+
 一个面向腾讯 CDG 金融科技岗位的产品实践项目。起点很具体：商户发现 POS 和支付账单对不上时，怎样把差额查清楚，并准备好交给财务或客服的材料？
 
 项目用三个合成商户、两个账单日复现这个流程，另提供六项产品经理练习。默认运行不需要账号或模型密钥。腾讯 TokenHub / 混元接入放在后端，配置后需单独验证真实输出。
@@ -52,9 +56,11 @@ npm run build
 
 格式由 Prettier 和 EditorConfig 统一约定。`scripts/artifacts.mjs` 从实际数据和任务生成评测报告、CSV 与课程文档，生成文件无需手工改。具体变更见 `CHANGELOG.md`。
 
-## 可提交作品准备
+## 在线作品与部署
 
-`dist/` 是不含密钥的静态演示站，可部署 GitHub Pages、Vercel 或腾讯云静态托管。项目不依赖绝对域名，支持子目录。当前未配置托管账号，127.0.0.1 仅在本机可访问，不能填入招聘作品链接。
+正式作品入口为 [商证 MerchantLens](https://harry-bytefina.github.io/merchantlens/)，源码见 [GitHub 仓库](https://github.com/harry-bytefina/merchantlens)。2026-10-04 已通过 GitHub Pages 发布，首个发布记录见 [GitHub Actions](https://github.com/harry-bytefina/merchantlens/actions/runs/37142662688)。`dist/` 是不含密钥的静态站，支持子目录；Node 模型后端没有发布到该站点。
+
+当前访问检查限于本设备及无需身份认证的 HTTP 请求，未验证中国大陆网络、不同设备或长期可用性。真实模型调用、商户接入与业务效果验证仍未完成。`127.0.0.1` 仍只用于本机调试，招聘作品链接应使用上面的 HTTPS 地址。
 
 `docs/` 包含产品概览、PRD、业务地图、课程、评测协议、技术设计、接入说明、面试指南与准确的网申表述。`public/artifacts/` 包含合成 CSV、评测用例和报告、数据指纹、工单样例及评审 PDF。
 
