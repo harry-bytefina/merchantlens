@@ -1,0 +1,426 @@
+{
+  "version": "1.1.0",
+  "fixtureHash": "fa44f551540286c6a1ee5c956f62f1acbaeeca7ad304088f699a73817e4f9c0f",
+  "counts": {
+    "merchants": 3,
+    "trades": 144,
+    "posOrders": 147,
+    "refunds": 12
+  },
+  "scopes": [
+    {
+      "scope": {
+        "merchantId": "demo-qinghe",
+        "billDate": "2026-09-28"
+      },
+      "result": {
+        "tradeCount": 24,
+        "posCount": 24,
+        "gross": 155700,
+        "posGross": 155700,
+        "fee": 936,
+        "refunds": 1000,
+        "pendingRefunds": 0,
+        "net": 153764,
+        "difference": 0,
+        "findings": [],
+        "series": [
+          {
+            "date": "2026-09-28",
+            "gross": 155700,
+            "net": 153764
+          },
+          {
+            "date": "2026-09-29",
+            "gross": 161700,
+            "net": 159653
+          }
+        ]
+      }
+    },
+    {
+      "scope": {
+        "merchantId": "demo-qinghe",
+        "billDate": "2026-09-29"
+      },
+      "result": {
+        "tradeCount": 24,
+        "posCount": 25,
+        "gross": 161700,
+        "posGross": 163300,
+        "fee": 1047,
+        "refunds": 1000,
+        "pendingRefunds": 3700,
+        "net": 159653,
+        "difference": 1600,
+        "findings": [
+          {
+            "id": "F-DUP-QH-0929-003",
+            "category": "duplicate",
+            "title": "POS重复记录",
+            "amount": 3175,
+            "severity": "high",
+            "detail": "QH-0929-003在POS中出现2次，需核验重复导出或重复记账；不能据此断定消费者重复支付。",
+            "orderIds": [
+              "QH-0929-003"
+            ]
+          },
+          {
+            "id": "F-AMOUNT-QH-0929-017",
+            "category": "amount",
+            "title": "订单金额不一致",
+            "amount": 100,
+            "severity": "high",
+            "detail": "QH-0929-017：POS ¥85.25，支付账单 ¥84.25。需核对优惠、修改记录与导出口径。",
+            "orderIds": [
+              "QH-0929-017"
+            ]
+          },
+          {
+            "id": "F-NOBILL-QH-0929-099",
+            "category": "missing-bill",
+            "title": "POS有单，支付账单未匹配",
+            "amount": 4500,
+            "severity": "high",
+            "detail": "QH-0929-099未匹配当前日支付账单；需检查支付渠道、账单日期和支付状态，未证明平台漏结算。",
+            "orderIds": [
+              "QH-0929-099"
+            ]
+          },
+          {
+            "id": "F-FEE-QH-0929-008",
+            "category": "fee",
+            "title": "费用与演示合同不一致",
+            "amount": 75,
+            "severity": "medium",
+            "detail": "QH-0929-008账单手续费¥1.05，按演示合同逐笔计算应为¥0.30；偏差¥0.75。实际费用须核验合同及退款返还，不能直接判定多收。",
+            "orderIds": [
+              "QH-0929-008"
+            ]
+          },
+          {
+            "id": "F-NOPOS-QH-0929-011",
+            "category": "missing-pos",
+            "title": "支付成功，POS未匹配",
+            "amount": -6175,
+            "severity": "medium",
+            "detail": "QH-0929-011支付账单记录¥61.75，POS中没有同ID；需核对收银系统同步和订单映射。",
+            "orderIds": [
+              "QH-0929-011"
+            ]
+          },
+          {
+            "id": "F-RF-QH-0929-006",
+            "category": "refund",
+            "title": "退款处理中，需回查",
+            "amount": 1500,
+            "severity": "low",
+            "detail": "RF-QH-0929-006 / QH-0929-006：PROCESSING，¥15.00。未确认最终退款成功，不能承诺银行到账。",
+            "orderIds": [
+              "QH-0929-006"
+            ]
+          },
+          {
+            "id": "F-RF-QH-0929-009",
+            "category": "refund",
+            "title": "退款异常，需人工核验",
+            "amount": 2200,
+            "severity": "high",
+            "detail": "RF-QH-0929-009 / QH-0929-009：ABNORMAL，¥22.00。未确认最终退款成功，不能承诺银行到账。",
+            "orderIds": [
+              "QH-0929-009"
+            ]
+          }
+        ],
+        "series": [
+          {
+            "date": "2026-09-28",
+            "gross": 155700,
+            "net": 153764
+          },
+          {
+            "date": "2026-09-29",
+            "gross": 161700,
+            "net": 159653
+          }
+        ]
+      }
+    },
+    {
+      "scope": {
+        "merchantId": "demo-yunji",
+        "billDate": "2026-09-28"
+      },
+      "result": {
+        "tradeCount": 24,
+        "posCount": 24,
+        "gross": 184500,
+        "posGross": 184500,
+        "fee": 1017,
+        "refunds": 1000,
+        "pendingRefunds": 0,
+        "net": 182483,
+        "difference": 0,
+        "findings": [],
+        "series": [
+          {
+            "date": "2026-09-28",
+            "gross": 184500,
+            "net": 182483
+          },
+          {
+            "date": "2026-09-29",
+            "gross": 190500,
+            "net": 188378
+          }
+        ]
+      }
+    },
+    {
+      "scope": {
+        "merchantId": "demo-yunji",
+        "billDate": "2026-09-29"
+      },
+      "result": {
+        "tradeCount": 24,
+        "posCount": 25,
+        "gross": 190500,
+        "posGross": 192600,
+        "fee": 1122,
+        "refunds": 1000,
+        "pendingRefunds": 3700,
+        "net": 188378,
+        "difference": 2100,
+        "findings": [
+          {
+            "id": "F-DUP-YJ-0929-003",
+            "category": "duplicate",
+            "title": "POS重复记录",
+            "amount": 4375,
+            "severity": "high",
+            "detail": "YJ-0929-003在POS中出现2次，需核验重复导出或重复记账；不能据此断定消费者重复支付。",
+            "orderIds": [
+              "YJ-0929-003"
+            ]
+          },
+          {
+            "id": "F-AMOUNT-YJ-0929-017",
+            "category": "amount",
+            "title": "订单金额不一致",
+            "amount": 100,
+            "severity": "high",
+            "detail": "YJ-0929-017：POS ¥97.25，支付账单 ¥96.25。需核对优惠、修改记录与导出口径。",
+            "orderIds": [
+              "YJ-0929-017"
+            ]
+          },
+          {
+            "id": "F-NOBILL-YJ-0929-099",
+            "category": "missing-bill",
+            "title": "POS有单，支付账单未匹配",
+            "amount": 5000,
+            "severity": "high",
+            "detail": "YJ-0929-099未匹配当前日支付账单；需检查支付渠道、账单日期和支付状态，未证明平台漏结算。",
+            "orderIds": [
+              "YJ-0929-099"
+            ]
+          },
+          {
+            "id": "F-FEE-YJ-0929-008",
+            "category": "fee",
+            "title": "费用与演示合同不一致",
+            "amount": 75,
+            "severity": "medium",
+            "detail": "YJ-0929-008账单手续费¥1.09，按演示合同逐笔计算应为¥0.34；偏差¥0.75。实际费用须核验合同及退款返还，不能直接判定多收。",
+            "orderIds": [
+              "YJ-0929-008"
+            ]
+          },
+          {
+            "id": "F-NOPOS-YJ-0929-011",
+            "category": "missing-pos",
+            "title": "支付成功，POS未匹配",
+            "amount": -7375,
+            "severity": "medium",
+            "detail": "YJ-0929-011支付账单记录¥73.75，POS中没有同ID；需核对收银系统同步和订单映射。",
+            "orderIds": [
+              "YJ-0929-011"
+            ]
+          },
+          {
+            "id": "F-RF-YJ-0929-006",
+            "category": "refund",
+            "title": "退款处理中，需回查",
+            "amount": 1500,
+            "severity": "low",
+            "detail": "RF-YJ-0929-006 / YJ-0929-006：PROCESSING，¥15.00。未确认最终退款成功，不能承诺银行到账。",
+            "orderIds": [
+              "YJ-0929-006"
+            ]
+          },
+          {
+            "id": "F-RF-YJ-0929-009",
+            "category": "refund",
+            "title": "退款异常，需人工核验",
+            "amount": 2200,
+            "severity": "high",
+            "detail": "RF-YJ-0929-009 / YJ-0929-009：ABNORMAL，¥22.00。未确认最终退款成功，不能承诺银行到账。",
+            "orderIds": [
+              "YJ-0929-009"
+            ]
+          }
+        ],
+        "series": [
+          {
+            "date": "2026-09-28",
+            "gross": 184500,
+            "net": 182483
+          },
+          {
+            "date": "2026-09-29",
+            "gross": 190500,
+            "net": 188378
+          }
+        ]
+      }
+    },
+    {
+      "scope": {
+        "merchantId": "demo-xinghu",
+        "billDate": "2026-09-28"
+      },
+      "result": {
+        "tradeCount": 24,
+        "posCount": 24,
+        "gross": 213300,
+        "posGross": 213300,
+        "fee": 1068,
+        "refunds": 1000,
+        "pendingRefunds": 0,
+        "net": 211232,
+        "difference": 0,
+        "findings": [],
+        "series": [
+          {
+            "date": "2026-09-28",
+            "gross": 213300,
+            "net": 211232
+          },
+          {
+            "date": "2026-09-29",
+            "gross": 219300,
+            "net": 217127
+          }
+        ]
+      }
+    },
+    {
+      "scope": {
+        "merchantId": "demo-xinghu",
+        "billDate": "2026-09-29"
+      },
+      "result": {
+        "tradeCount": 24,
+        "posCount": 25,
+        "gross": 219300,
+        "posGross": 221900,
+        "fee": 1173,
+        "refunds": 1000,
+        "pendingRefunds": 3700,
+        "net": 217127,
+        "difference": 2600,
+        "findings": [
+          {
+            "id": "F-DUP-XH-0929-003",
+            "category": "duplicate",
+            "title": "POS重复记录",
+            "amount": 5575,
+            "severity": "high",
+            "detail": "XH-0929-003在POS中出现2次，需核验重复导出或重复记账；不能据此断定消费者重复支付。",
+            "orderIds": [
+              "XH-0929-003"
+            ]
+          },
+          {
+            "id": "F-AMOUNT-XH-0929-017",
+            "category": "amount",
+            "title": "订单金额不一致",
+            "amount": 100,
+            "severity": "high",
+            "detail": "XH-0929-017：POS ¥109.25，支付账单 ¥108.25。需核对优惠、修改记录与导出口径。",
+            "orderIds": [
+              "XH-0929-017"
+            ]
+          },
+          {
+            "id": "F-NOBILL-XH-0929-099",
+            "category": "missing-bill",
+            "title": "POS有单，支付账单未匹配",
+            "amount": 5500,
+            "severity": "high",
+            "detail": "XH-0929-099未匹配当前日支付账单；需检查支付渠道、账单日期和支付状态，未证明平台漏结算。",
+            "orderIds": [
+              "XH-0929-099"
+            ]
+          },
+          {
+            "id": "F-FEE-XH-0929-008",
+            "category": "fee",
+            "title": "费用与演示合同不一致",
+            "amount": 75,
+            "severity": "medium",
+            "detail": "XH-0929-008账单手续费¥1.12，按演示合同逐笔计算应为¥0.37；偏差¥0.75。实际费用须核验合同及退款返还，不能直接判定多收。",
+            "orderIds": [
+              "XH-0929-008"
+            ]
+          },
+          {
+            "id": "F-NOPOS-XH-0929-011",
+            "category": "missing-pos",
+            "title": "支付成功，POS未匹配",
+            "amount": -8575,
+            "severity": "medium",
+            "detail": "XH-0929-011支付账单记录¥85.75，POS中没有同ID；需核对收银系统同步和订单映射。",
+            "orderIds": [
+              "XH-0929-011"
+            ]
+          },
+          {
+            "id": "F-RF-XH-0929-006",
+            "category": "refund",
+            "title": "退款处理中，需回查",
+            "amount": 1500,
+            "severity": "low",
+            "detail": "RF-XH-0929-006 / XH-0929-006：PROCESSING，¥15.00。未确认最终退款成功，不能承诺银行到账。",
+            "orderIds": [
+              "XH-0929-006"
+            ]
+          },
+          {
+            "id": "F-RF-XH-0929-009",
+            "category": "refund",
+            "title": "退款异常，需人工核验",
+            "amount": 2200,
+            "severity": "high",
+            "detail": "RF-XH-0929-009 / XH-0929-009：ABNORMAL，¥22.00。未确认最终退款成功，不能承诺银行到账。",
+            "orderIds": [
+              "XH-0929-009"
+            ]
+          }
+        ],
+        "series": [
+          {
+            "date": "2026-09-28",
+            "gross": 213300,
+            "net": 211232
+          },
+          {
+            "date": "2026-09-29",
+            "gross": 219300,
+            "net": 217127
+          }
+        ]
+      }
+    }
+  ]
+}

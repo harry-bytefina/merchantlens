@@ -1,0 +1,13 @@
+﻿id,orderId,merchantId,date,amount,status
+"RF-QH-0928-002","QH-0928-002","demo-qinghe","2026-09-28","1000","SUCCESS"
+"RF-QH-0929-002","QH-0929-002","demo-qinghe","2026-09-29","1000","SUCCESS"
+"RF-QH-0929-006","QH-0929-006","demo-qinghe","2026-09-29","1500","PROCESSING"
+"RF-QH-0929-009","QH-0929-009","demo-qinghe","2026-09-29","2200","ABNORMAL"
+"RF-YJ-0928-002","YJ-0928-002","demo-yunji","2026-09-28","1000","SUCCESS"
+"RF-YJ-0929-002","YJ-0929-002","demo-yunji","2026-09-29","1000","SUCCESS"
+"RF-YJ-0929-006","YJ-0929-006","demo-yunji","2026-09-29","1500","PROCESSING"
+"RF-YJ-0929-009","YJ-0929-009","demo-yunji","2026-09-29","2200","ABNORMAL"
+"RF-XH-0928-002","XH-0928-002","demo-xinghu","2026-09-28","1000","SUCCESS"
+"RF-XH-0929-002","XH-0929-002","demo-xinghu","2026-09-29","1000","SUCCESS"
+"RF-XH-0929-006","XH-0929-006","demo-xinghu","2026-09-29","1500","PROCESSING"
+"RF-XH-0929-009","XH-0929-009","demo-xinghu","2026-09-29","2200","ABNORMAL"
