@@ -38,7 +38,7 @@ def box(text):
 def link(title,url):return f'<link href="{escape(url)}" color="#4F46E5">{escape(title)}</link>'
 fmt=lambda cents:f'￥{cents/100:,.2f}'
 
-heading(1,'商证 MerchantLens','腾讯 CDG 金融科技方向 | AI 产品实习工作室 | 独立项目 v1.0')
+heading(1,'商证 MerchantLens','腾讯 CDG 金融科技方向 | AI 产品实习工作室 | 独立项目 v1.1')
 box('产品命题：让商户异常处理从“凭经验解释”转为“范围明确、金额可算、证据可查、人工可审”的闭环。程序提供可体验的业务原型和六项产品经理训练任务。')
 add('业务依据与组织边界','h2')
 add('CDG 的公开业务覆盖基础支付与金融应用；微信生态提供商户和小程序入口；腾讯云提供模型服务。本项目从金融科技问题出发，选取微信支付公开对账与退款规则作为案例，不推断腾讯内部汇报、权限或流程。')
@@ -108,7 +108,7 @@ add('金额错误、跨商户泄漏、未经授权资金动作均为硬门：发
 add('真实模型评测计划','h2')
 add('冻结数据、规则、prompt 和模型版本；分别评估日常问题、权限对抗与证据不足。记录来源支撑率、金额一致性、有效拒答率、人工修订率、P95延迟及每次有效处理成本。必须加入“引用正确但把PROCESSING说成已到账”等反例，不能只验证JSON格式。')
 add('部署与作品链接','h2')
-add('当前完整本地演示无需账号或密钥。静态构建和源码包可用于GitHub Pages、Vercel或腾讯云托管。用户尚未配置托管账号；127.0.0.1仅供本机，长期HTTPS链接仍待部署。真实付费模型公网入口需要单独鉴权、配额、限流与费用封顶。')
+add('2026-10-04 已通过 GitHub Pages 发布。在线体验：'+link('https://harry-bytefina.github.io/merchantlens/','https://harry-bytefina.github.io/merchantlens/')+'。当前为静态合成演示，无需账号或密钥；真实模型后端尚未开放。真实付费模型公网入口仍需单独鉴权、配额、限流与费用封顶。')
 add('证据与可复验记录','h2')
 add(f'数据：{REPORT["counts"]["merchants"]}个合成商户 / {REPORT["counts"]["trades"]}条支付 / {REPORT["counts"]["posOrders"]}条POS / {REPORT["counts"]["refunds"]}条退款。可下载CSV、固定评测用例、报告JSON/Markdown、工单及学习记录。')
 add('数据SHA256：'+REPORT['fixtureHash'],'small')
