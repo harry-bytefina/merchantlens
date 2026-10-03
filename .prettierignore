@@ -1,0 +1,8 @@
+node_modules/
+dist/
+build-core/
+tmp/
+public/docs/
+public/artifacts/
+docs/INTERNSHIP_CURRICULUM.md
+package-lock.json
